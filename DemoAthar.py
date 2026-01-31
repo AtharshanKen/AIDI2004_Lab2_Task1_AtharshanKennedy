@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*-
-print("Atharshan Kennedy")
+print(f"Atharshan Kennedy {10 * 20}")
