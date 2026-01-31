@@ -1,0 +1,25 @@
+name: AIDI2004 Lab2 Task 2 CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Action 1: Checkout repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Action 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Action 3: Run Python Script
+      - name: Run Python script
+        run: python DemoAthar.py
